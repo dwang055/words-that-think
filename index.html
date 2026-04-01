@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Words That Think — Multilingual Vocabulary</title>
+  <style>
+    :root {
+      --bg: #0a1620;
+      --card: #13253a;
+      --accent: #6ef7c8;
+      --text: #e7fbff;
+      --muted: #9fd6df;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px 80px;
+      background: linear-gradient(135deg, #0f1f2e, #06131a);
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin: 0 0 20px;
+      color: var(--accent);
+    }
+    .hero p {
+      font-size: 1.35rem;
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .section-title {
+      font-size: 2.1rem;
+      margin: 80px 0 40px;
+      color: var(--accent);
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.3s;
+      border: 1px solid rgba(110,247,200,0.15);
+    }
+    .card:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 30px 60px rgba(110,247,200,0.3);
+    }
+    .cover {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 24px;
+    }
+    .lang-tag {
+      display: inline-block;
+      padding: 6px 18px;
+      background: rgba(110,247,200,0.2);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #06131a;
+      padding: 14px 32px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      margin-top: 8px;
+    }
+    .btn:hover {
+      background: #9fffd8;
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 80px 20px;
+      color: #4a6e78;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Words That Think</h1>
+    <p>Context-based vocabulary apps for multiple languages</p>
+  </div>
+
+  <div class="container">
+
+    <h2 class="section-title">🇨🇳 Learning English (Chinese → English)</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="covers/pride-and-prejudice.jpg" alt="Pride and Prejudice" class="cover">
+        <div class="card-body">
+          <span class="lang-tag">English → Chinese</span>
+          <h3>Pride and Prejudice</h3>
+          <p>Jane Austen</p>
+          <a href="apps/words-that-think-pride-and-prejudice.html" class="btn">Open App →</a>
+        </div>
+      </div>
+      <!-- Add more cards here -->
+    </div>
+
+    <h2 class="section-title">🇬🇧 Native English Speakers (English → English)</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="covers/brave-new-world.jpg" alt="Brave New World" class="cover">
+        <div class="card-body">
+          <span class="lang-tag">English → English</span>
+          <h3>Brave New World</h3>
+          <p>Aldous Huxley</p>
+          <a href="apps/words-that-think-brave-new-world.html" class="btn">Open App →</a>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">🇨🇳 Learning Chinese (English → Chinese)</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="covers/three-body.jpg" alt="The Three-Body Problem" class="cover">
+        <div class="card-body">
+          <span class="lang-tag">Chinese → English</span>
+          <h3>《三体》 The Three-Body Problem</h3>
+          <p>Liu Cixin</p>
+          <a href="apps/words-that-think-three-body.html" class="btn">Open App →</a>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">🇯🇵 Learning Japanese (Japanese → English)</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="covers/norwegian-wood.jpg" alt="Norwegian Wood" class="cover">
+        <div class="card-body">
+          <span class="lang-tag">Japanese → English</span>
+          <h3>ノルウェイの森 Norwegian Wood</h3>
+          <p>Haruki Murakami</p>
+          <a href="apps/words-that-think-norwegian-wood.html" class="btn">Open App →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Words That Think — Free offline vocabulary apps<br>
+    Hosted on GitHub Pages
+  </footer>
+
+</body>
+</html>
